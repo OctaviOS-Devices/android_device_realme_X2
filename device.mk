@@ -169,6 +169,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/nxp/opensource/sn100x
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service.phoenix
+
 # Telephony
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
