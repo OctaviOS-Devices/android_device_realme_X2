@@ -72,7 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Camera2
+    GCamGo
 
 # Common init scripts
 PRODUCT_PACKAGES += \
