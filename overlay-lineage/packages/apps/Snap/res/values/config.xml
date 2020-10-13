@@ -23,4 +23,11 @@
 
     <!-- Enable support for camera api v2 -->
     <bool name="support_camera_api_v2">true</bool>
+
+  <!-- Battery Health -->
+    <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
+    <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full_design</string>
+    <string name="config_batCurCap">/sys/class/power_supply/battery/charge_full</string>
+
 </resources>
