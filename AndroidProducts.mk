@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_X2.mk
+    $(LOCAL_DIR)/octavi_X2.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    evolution_X2-eng \
-    evolution_X2-user \
-    evolution_X2-userdebug
+    octavi_X2-eng \
+    octavi_X2-user \
+    octavi_X2-userdebug
