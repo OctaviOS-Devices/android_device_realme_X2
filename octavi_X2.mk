@@ -6,11 +6,14 @@
 
 $(call inherit-product, device/realme/X2/device.mk)
 
+OCTAVI_BUILD_TYPE := Official
+OCTAVI_DEVICE_MAINTAINER := CannedShroud
+
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/octavi/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X2
+PRODUCT_NAME := octavi_X2
 PRODUCT_DEVICE := X2
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2
