@@ -32,3 +32,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Use Vulkan backend for Skia UI rendering
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiavk
+
+# Power-saving props
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.use_data_netmgrd=true \
+    ro.vold.umsdirtyratio=20 \
+    ro.ril.disable.power.collapse=0 \
+    power.saving.mode=1 \
+    pm.sleep_mode=1
