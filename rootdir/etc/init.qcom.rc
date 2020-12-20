@@ -89,6 +89,9 @@ service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     group radio wifi inet vendor_qti_diag log
     disabled
 
+service vendor.adsprpc /vendor/qcomvendor/qcom/proprietary/commonsys-intf/adsprpc
+    disabled
+
 on property:sys.boot_completed=1
     setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
 
