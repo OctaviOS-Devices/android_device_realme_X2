@@ -71,7 +71,6 @@ PRODUCT_PACKAGES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.devicesetting.rc
 
 PRODUCT_PACKAGES += \
     fstab.qcom
@@ -85,7 +84,6 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    devicesettings \
     RealmeDoze \
     RealmeProximityHelper
 
@@ -102,7 +100,7 @@ PRODUCT_COPY_FILES += \
 # Octavi specific biometric perms
 PRODUCT_COPY_FILES += \
     vendor/ocatvi/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-    
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
