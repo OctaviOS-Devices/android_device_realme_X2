@@ -1,0 +1,26 @@
+[
+  {
+    "remote": "github",
+    "repository": "OctaviOS-Devices/device_realme_X2", 
+    "target_path": "device/realme/X2",
+    "branch": "clean"
+  },
+  {
+    "remote": "github",
+    "repository": "OctaviOS-Devices/vendor_realme_X2", 
+    "target_path": "vendor/realme/X2",
+    "branch": "octavi"
+  },
+  {
+    "remote": "github",
+    "repository": "OctaviOS-Devices/kernel_realme_sm6150",
+    "target_path": "kernel/realme/sm6150",
+    "branch": "octavi"
+  },
+  {
+    "remote": "github",
+    "repository": "CannedShroud/android_device_realme_X2-prebuilts",
+    "target_path": "device/realme/X2-prebuilts",
+    "branch": "android-11.0.0"
+  }
+] 
