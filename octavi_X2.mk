@@ -6,8 +6,14 @@
 
 $(call inherit-product, device/realme/X2/device.mk)
 
+
+# Some octavi specific flags
+OCTAVI_BUILD_TYPE := Official
+OCTAVI_DEVICE_MAINTAINER := CannedShroud
+$(call inherit-product, vendor/ocatvi/config/common.mk)
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_X2
+PRODUCT_NAME := ocatvi_X2
 PRODUCT_DEVICE := X2
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2
