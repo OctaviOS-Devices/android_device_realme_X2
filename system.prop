@@ -66,7 +66,7 @@ dalvik.vm.image-dex2oat-filter=quicken
 dalvik.vm.image-dex2oat-threads=8
 
 # Display post-processing
-ro.sf.lcd_density=400
+ro.sf.lcd_density=460
 debug.cpurend.vsync=false
 debug.sf.latch_unsignaled=1
 debug.sf.hw=1
