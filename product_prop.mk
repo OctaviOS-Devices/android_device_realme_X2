@@ -1,10 +1,12 @@
-# Adb
-ifeq ($(TARGET_BUILD_VARIANT),eng)
+# Adb and rescue party
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 # /vendor/default.prop is force-setting ro.adb.secure=1
 # Get rid of that by overriding it in /product on eng builds
+# Disable Rescue Party on userdebug & eng build
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.secure=0 \
-    ro.adb.secure=0
+    ro.adb.secure=0 \
+    persist.sys.disable_rescue=true
 endif
 
 # Blurs
@@ -14,13 +16,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1
 
-# Disable Rescue Party on userdebug & eng build
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.disable_rescue=true
-endif
-
-# Media 
+# Media
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=16 \
     persist.vendor.audio.fluence.voicerec=true
