@@ -75,6 +75,15 @@ void property_override(char const prop[], char const value[], bool add = true)
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+void property_override_multifp(char const buildfp[], char const systemfp[],
+	char const bootimagefp[], char const vendorfp[], char const value[])
+{
+	property_override(buildfp, value);
+	property_override(systemfp, value);
+	property_override(bootimagefp, value);
+	property_override(vendorfp, value);
+}
+
 // Decommonise nfc properties
 void load_nfc_props()
 {
