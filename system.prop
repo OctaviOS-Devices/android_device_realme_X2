@@ -29,6 +29,10 @@ persist.vendor.service.bt.iotinfo.report.enable=true
 # Blurs
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
+persist.sys.sf.disable_blurs=1
+debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1
+
 
 # Camera
 persist.vendor.camera.light_ae.enable=1
@@ -66,9 +70,9 @@ dalvik.vm.image-dex2oat-filter=quicken
 dalvik.vm.image-dex2oat-threads=8
 
 # Display post-processing
+debug.hwui.renderer=skiavk
 ro.sf.lcd_density=460
 debug.cpurend.vsync=false
-debug.sf.latch_unsignaled=1
 debug.sf.hw=1
 debug.sf.enable_gl_backpressure=1
 ro.surface_flinger.has_wide_color_display=true
@@ -80,9 +84,6 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.ad=1
 ro.vendor.display.sensortype=2
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
-
-# ID
-ro.product.device=X2
 
 # offsets
 debug.sf.use_phase_offsets_as_durations=1
