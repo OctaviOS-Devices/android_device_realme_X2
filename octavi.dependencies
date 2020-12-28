@@ -3,7 +3,7 @@
     "remote": "github",
     "repository": "OctaviOS-Devices/device_realme_X2", 
     "target_path": "device/realme/X2",
-    "branch": "clean"
+    "branch": "octavi"
   },
   {
     "remote": "github",
