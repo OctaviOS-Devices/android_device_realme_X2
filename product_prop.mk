@@ -20,7 +20,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Override Display Density
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.sf.lcd_density=460
+    ro.sf.lcd_density=480
 
 # Power-saving props
 PRODUCT_PRODUCT_PROPERTIES += \
